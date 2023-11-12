@@ -22,3 +22,5 @@ meanStdData <- xData[stdMeanCols]
 
 # Creates a second data frame which has the total average for each measurement
 colAveragesData <- data.frame("Total Average" = colMeans(meanStdData))
+
+write.table(colAveragesData, file = "averageTable.txt", col.names = FALSE)
